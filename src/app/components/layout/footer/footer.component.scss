@@ -1,0 +1,24 @@
+@import '/src/styles.scss';
+
+.footer {
+    display: flex;
+    padding: 10px 15px;
+    gap: 1rem;
+
+    &__btn {
+        height: 40px;
+        background-color: $cor-branca;
+        padding: 10px 15px;
+        color: $cor-primaria;
+        border: 1px solid $cor-primaria;;
+        cursor: pointer;
+    }
+
+    &__admissao {
+        background-color: $cor-primaria;
+        color: $cor-branca;
+    }
+}
+
+
+

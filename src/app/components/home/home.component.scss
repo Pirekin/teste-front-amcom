@@ -1,0 +1,70 @@
+@import '/src/styles.scss';
+
+.home {
+    padding: 2rem;
+  
+    &__welcome {
+      background-color: $cor-branca;
+      padding: 2rem;
+      border-radius: 0.5rem;
+      text-align: center;
+      margin-bottom: 2rem;
+  
+      h1 {
+        margin: 0 0 0.5rem;
+        font-size: 1.8rem;
+      }
+  
+      p {
+        margin: 0;
+        color: $cor-cinza4;
+      }
+    }
+  
+    &__cards {
+      display: flex;
+      gap: 2rem;
+      flex-wrap: wrap;
+    }
+  
+    &__card {
+      flex: 1;
+      min-width: 200px;
+      background-color: $cor-branca;
+      border-radius: 0.5rem;
+      padding: 1.5rem;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+      text-align: center;
+
+      &--cooperado {
+        color: red;
+      }
+  
+      h2 {
+        margin-bottom: 1rem;
+        font-size: 1.2rem;
+      }
+  
+      p {
+        font-size: 0.95rem;
+        color: $cor-cinza4;
+      }
+    }
+  }
+  
+  @keyframes destaque {
+    0% {
+      box-shadow: 0 0 10px rgba(255, 0, 0, 0.3);
+    }
+    50% {
+      box-shadow: 0 0 20px rgba(255, 0, 0, 0.6);
+    }
+    100% {
+      box-shadow: 0 0 10px rgba(255, 0, 0, 0.3);
+    }
+  }
+  
+  .card-destaque {
+    animation: destaque 1.5s infinite ease-in-out;
+    border-radius: 1rem;
+  }

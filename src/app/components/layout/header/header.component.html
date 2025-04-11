@@ -1,0 +1,25 @@
+<div class="header">
+    <div>
+        <h1 class="header__title">{{title | uppercase}}</h1>
+        <span class="header__subtitle">
+            {{subtitle}}
+        </span>
+    </div>
+
+    <div class="header__acoes">
+        <button class="header__icon">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" [attr.d]="ICON_BELL"/>
+            </svg>
+              
+        </button>
+    
+        <button class="header__empresa">VIACREDI</button>
+    
+        <button class="header__avatar">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" [attr.d]="ICON_USER_CIRCLE" />
+            </svg>
+        </button>
+    </div>
+</div>

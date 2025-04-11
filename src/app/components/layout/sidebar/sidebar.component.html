@@ -1,0 +1,12 @@
+<div class="sidebar">
+    <ul class="sidebar__menu">
+        <li *ngFor="let menu of listaMenu" class="sidebar__menu-item">
+          <button (click)="navegar(menu.rota)" [attr.title]="menu.nome">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+              [attr.d]="menu.iconePath"/>
+            </svg>
+          </button>
+        </li>
+    </ul>
+</div>

@@ -1,0 +1,32 @@
+@import '/src/styles.scss';
+
+.layout {
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+
+  &__sidebar{
+    width: 70px;
+    background-color: $cor-primaria;
+  }
+
+  &__main {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+  }
+
+  &__header {
+    height: 70px;
+  }
+
+  &__conteudo {
+    padding: 20px;
+    flex: 1;
+    background-color: $cor-cinza1;
+  }
+
+  &__footer {
+    height: 60px;
+  }
+}

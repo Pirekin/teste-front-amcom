@@ -1,0 +1,65 @@
+@import '/src/styles.scss';
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+
+    &__acoes{
+        display: flex;
+        align-items: center;
+
+        button {
+            margin: 0px 5px;
+        }
+    }
+
+    &__title {
+        font-size: 14px;
+        font-weight: 700;
+        margin: 0;
+        color: $cor-preta-ailos;
+    }
+
+    &__subtitle {
+        font-size: 12px;
+        color: $cor-cinza4;
+    }
+
+    &__icon {
+        background: none;
+        border: none;
+        padding: 0;
+        margin: 0;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 24px;
+        height: 24px;
+        color: $cor-preta-ailos;
+    }
+
+    &__empresa {
+        background-color: $cor-branca;
+        border: 1px solid $cor-primaria;
+        color: $cor-primaria;
+        padding: 4px 12px;
+        border-radius: 20px;
+        font-size: 12px;
+        font-weight: 600;
+        cursor: pointer;
+    }
+
+    &__avatar {
+        background: none;
+        border: none;
+        padding: 0;
+        margin: 0;
+        cursor: pointer;
+        width: 32px;
+        height: 32px;
+        border-radius: 50%;
+    }
+}

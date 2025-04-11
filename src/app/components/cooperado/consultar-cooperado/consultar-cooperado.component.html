@@ -1,0 +1,44 @@
+<div class="cooperado">
+
+    <!-- TODO: AQUI TERIAMOS O COMPONENTE LINHA DO TEMPO -->
+
+    <h2>Informe o CPF do futuro cooperado (a)</h2>
+    <p class="cooperado__descricao"> Se necessário, você poderá duplicar uma conta existente ou pausar e retomar este cadastro futuramente.
+    <br/>Digite apenas os números (sem pontos ou traços).</p>
+
+    <form [formGroup]="formularioCpf">
+        <div class="cooperado__busca">
+            <label for="cpf">CPF</label>
+            <div class="cooperado__cpf">
+                <input
+                    id="cpf"
+                    type="text"
+                    placeholder="000.000.000-00"
+                    formControlName="cpf"
+                />
+                <button 
+                    (click)="validarCPF()" 
+                    [ngClass]="{
+                        'desativado': formularioCpf.invalid,
+                        'ativado': formularioCpf.valid
+                      }"
+                    [disabled]="formularioCpf.invalid">
+                    Consultar por CPF
+                </button>
+            </div>
+            
+        </div>
+    </form>
+
+    <div class="cooperado__infos">
+        <amcom-info-cooperado *ngIf="cooperado"
+            [cooperado]="cooperado">
+        </amcom-info-cooperado>
+
+        <amcom-card-default *ngIf="cooperadoInexistente"
+            title="Cooperado não localizado"
+            subtitle="Para este cpf faça um novo cadastro">
+        </amcom-card-default>
+    </div>        
+</div>
+

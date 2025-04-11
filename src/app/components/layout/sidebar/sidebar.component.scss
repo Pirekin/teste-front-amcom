@@ -1,0 +1,36 @@
+@import '/src/styles.scss';
+
+.sidebar {
+    padding: 20px 5px;
+
+    &__menu {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__menu-item {
+        margin: 0;
+        padding: 0;
+        margin-bottom: 20px;
+
+        button {
+            background: none;
+            border: none;
+            padding: 0;
+            margin: 0;
+            width: 24px;
+            height: 24px;
+            color: $cor-branca;
+            cursor: pointer;
+
+            &:hover{
+                color: $cor-cinza4;
+            }
+        }
+    }
+}

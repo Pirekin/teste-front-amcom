@@ -1,0 +1,40 @@
+@import '/src/styles.scss';
+
+.cooperado {
+    &__descricao {
+        color: $cor-cinza1;
+    }
+
+    &__busca {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__cpf {
+        display: flex;
+        flex-direction: row;
+        
+        input {
+            margin-right: 10px;
+            background-color: $cor-branca;
+        }
+    }
+
+    &__infos{
+        display: flex;
+        gap: 1rem;
+        margin-top: 1rem;
+    }
+
+    .ativado {
+        background-color: $cor-primaria;
+        color: $cor-branca;
+        cursor: pointer;
+    }
+
+    .desativado {
+        background-color: $cor-cinza3;
+        color: $cor-cinza1;
+        cursor: not-allowed;
+    }
+}

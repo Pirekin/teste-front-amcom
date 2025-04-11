@@ -1,0 +1,16 @@
+<div class="card">
+    <h3 class="card__title">{{title}}</h3>
+    <p class="card__subtitle">{{subtitle}}</p>
+
+    <div *ngFor="let info of listaInformacoes" class="card__infos">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+            [attr.d]="info.icone"/>
+        </svg>
+        <div>
+            <p class="card__descricao">{{info.descricao}}</p>
+            <p class="card__valor">{{info.valor | titlecase}}</p>
+        </div>
+    </div>
+    <ng-content></ng-content>
+</div>
